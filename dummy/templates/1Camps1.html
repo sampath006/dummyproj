@@ -1,5 +1,5 @@
 {% load static %}
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -90,130 +90,21 @@
 					</tr>
 				</thead>
 				<tbody>
+				{% for data in campsdata %}
 					<tr>
-						<td>1</td>
-						<td>15-3-2021</td>
-						<td>9:00-16:00</td>
-						<td>Star Blood Camp</td>
-						<td>Near ICICI Bank,A-Colony</td>
-						<td>Andhra pradesh</td>
-						<td>Krishna</td>
-						<td>6875854689</td>
-						<td>Apollo Hospitals</td>
+						<td>{{data.id}}</td>
+						<td>{{data.date}}</td>
+						<td>{{data.time}}</td>
+						<td>{{data.campname}}</td>
+						<td>{{data.address}}</td>
+						<td>{{data.state}}</td>
+						<td>{{data.district}}</td>
+						<td>{{data.contact}}</td>
+						<td>{{data.organiser}}</td>
 
 						<td><a href="../../Authentication/login">Registered as Voluntary Donar</a></td>
-
-
-
 					</tr>
-					<tr>
-						<td>2</td>
-						<td>4-4-2021</td>
-						<td>9:00-18:00</td>
-						<td>Aaroghya Blood Camp</td>
-						<td>Near NTR grounds,Besent Road</td>
-						<td>Andhra pradesh</td>
-						<td>Krishna</td>
-						<td>9547566245</td>
-						<td>Rainbow Hospitals</td>
-						<td><a href="../../Authentication/login">Registered as Voluntary Donar</a></td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>14-5-2021</td>
-						<td>9:00-15:00</td>
-						<td>Niveda Blood Donation</td>
-						<td>Beside XYZ-Hospital,Rajahmundry</td>
-						<td>Andhra pradesh</td>
-						<td>East Godavari</td>
-						<td>9547681945</td>
-						<td>XYZ-Hospitals</td>
-						<td><a href="../../Authentication/login">Registered as Voluntary Donar</a></td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>3-4-2021</td>
-						<td>10:00-18:00</td>
-						<td>Rakth Blood Camp</td>
-						<td>Three lantern road,Vizianagaram</td>
-						<td>Andhra pradesh</td>
-						<td>Vizianagaram</td>
-						<td>9592602345</td>
-						<td>Rainbow Hospitals</td>
-						<td><a href="../../Authentication/login">Registered as Voluntary Donar</a></td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td>17-5-2021</td>
-						<td>10:00-17:00</td>
-						<td>Blood Cross Society</td>
-						<td>Pragathi Nagar,Kukatpally</td>
-						<td>Telangana</td>
-						<td>Medchal</td>
-						<td>9546594651</td>
-						<td>Apollo Hospitals</td>
-						<td><a href="../../Authentication/login">Registered as Voluntary Donar</a></td>
-					</tr>
-					<tr>
-						<td>6</td>
-						<td>14-4-2021</td>
-						<td>9:00-18:00</td>
-						<td>No More Thalassemia</td>
-						<td>Sanjeev Reddy Nagar</td>
-						<td>Telangana</td>
-						<td>Hyderabad</td>
-						<td>9546846545</td>
-						<td>-</td>
-						<td><a href="../../Authentication/login">Registered as Voluntary Donar</a></td>
-					</tr>
-					<tr>
-						<td>7</td>
-						<td>14-4-2021</td>
-						<td>9:00-18:00</td>
-						<td>aaroghya Blood Camp</td>
-						<td>PN Colony,Srikakulam</td>
-						<td>Andhra pradesh</td>
-						<td>Srikakulam</td>
-						<td>9547566245</td>
-						<td>Seven Hills Hospitals</td>
-						<td><a href="../../Authentication/login">Registered as Voluntary Donar</a></td>
-					</tr>
-					<tr>
-						<td>8</td>
-						<td>4-4-2021</td>
-						<td>9:00-18:00</td>
-						<td>Mother Teresa Blood Bank</td>
-						<td>Near RK-beach,beach Road</td>
-						<td>Andhra pradesh</td>
-						<td>Vishakapatnam</td>
-						<td>9547876985</td>
-						<td>OmniRK Hospitals</td>
-						<td><a href="../../Authentication/login">Registered as Voluntary Donar</a></td>
-					</tr>
-					<tr>
-						<td>9</td>
-						<td>16-4-2021</td>
-						<td>9:00-18:00</td>
-						<td>aaroghya Blood Camp</td>
-						<td>Near NTR grounds,Besent Road</td>
-						<td>Andhra pradesh</td>
-						<td>Krishna</td>
-						<td>9547566245</td>
-						<td>-</td>
-						<td><a href="../../Authentication/login">Registered as Voluntary Donar</a></td>
-					</tr>
-					<tr>
-						<td>10</td>
-						<td>21-5-2021</td>
-						<td>8:00-16:00</td>
-						<td>Rotary Blood Bank</td>
-						<td>Nehru Chowk,Gudivada</td>
-						<td>Andhra pradesh</td>
-						<td>Krishna</td>
-						<td>6356468545</td>
-						<td>kamineni Hospitals</td>
-						<td><a href="../../Authentication/login">Registered as Voluntary Donar</a></td>
-					</tr>
+					{% endfor %}
 				</tbody>
 			</table>
 		</div>
