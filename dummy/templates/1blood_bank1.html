@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>e-Blood Bank</title>
+    <link rel="stylesheet" href="{% static 'css/1bootstrap1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/1stylesheet1.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="{% url 'index' %}" class="pull-left visible-md visible-lg">
+                        <img id="logo" src="{% static 'images\img.jfif' %}" alt="Logo">
+                    </a>
+                    <div class="navbar-brand">
+                        <a href="{% url 'index' %}">
+                            <h1>e-Blood Bank</h1>
+                        </a>
+                        <p>Bring a Life Back to Power!!</p>
+                    </div>
+                    <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li id="navHomeButton" class="visible-xs active">
+                            <a href="{% url 'index' %}" id="Home_Black_background_List">Home</a>
+                        </li>
+                        <li id="navMenuButton">
+                            <a href="../../Authentication/login">
+                                <br class="hidden-xs"> DashBoard</a>
+                        </li>
+                        <li>
+                            <a href="../../blood_bank/blood_bank">
+                                <br class="hidden-xs"> Blood Bank</a>
+                        </li>
+                        <li>
+                            <a href="../../Camps/Camps">
+                                <br class="hidden-xs"> Camps</a>
+                        </li>
+                        <li>
+                            <a href="../../Authentication/login" onclick="login.html">
+                                <br class="hidden-xs"> Login</a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <br class="hidden-xs"> About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="blood_bank_content" class="container">
+
+        <h1>
+            Blood Bank
+        </h1>
+        <hr>
+        <div id="blood_bank_search"><span></span><input type="search" name="location" placeholder="Search">
+            <label for="blood groups"></label>
+            <select name="group" id="blood_bank_blood_group_selection">
+                <option>Select</option>
+                <option>AB+ve</option>
+                <option>A+ve</option>
+                <option>B+ve</option>
+                <option>O+ve</option>
+                <option>A-ve</option>
+                <option>B-ve</option>
+                <option>O-ve</option>
+            </select>
+        </div>
+
+
+        <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Blood Bank</th>
+                    <th>Blood group</th>
+                    <th>Availability</th>
+                    <th>Address</th>
+                    <th>Contact Number</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td style="font-weight:bold;">Chiranjeevi Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">15<br>10<br>14<br>20<br>05<br>09<br>10<br>06</td>
+                    <td>11-5-422/2<br>Pragati Printers Lane<br>Red Hills<br>Hyderabad<br>500004</td>
+                    <td>+91 4023303995</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td style="font-weight:bold;">Yashoda Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">06<br>08<br>03<br>06<br>05<br>-<br>08<br>06</td>
+                    <td>4-5-11<br>Malakpet<br>beside Yashoda Hospital<br>Hyderabad<br>500036</td>
+                    <td>040 4567 4567</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td style="font-weight:bold;">Vivekananda Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">09<br>05<br>12<br>07<br>04<br>03<br>07<br>14</td>
+                    <td>12-2-790/3/B<br>Ayodhya Nagar Colony<br>Mehdipatnam<br>Hyderabad<br>500028</td>
+                    <td>+91 4023517519</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td style="font-weight:bold;">A V S Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">15<br>10<br>14<br>20<br>05<br>09<br>10<br>06</td>
+                    <td>6-2-1<br>Lakdikapul Road<br>Red Hills<br>Lakdikapul<br>Hyderabad<br>500004</td>
+                    <td>+91 99495 31099</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td style="font-weight:bold;">Rudhira Voluntary Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">06<br>08<br>03<br>06<br>05<br>-<br>08<br>06</td>
+                    <td>3-6-10/A<br>Liberty Road<br>Himayatnagar<br>Hyderabad<br>500029</td>
+                    <td>040 2322 0222</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td style="font-weight:bold;">Prathima Sai Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">09<br>05<br>12<br>07<br>04<br>03<br>07<br>14</td>
+                    <td>10-3-163/1<br>Railway Old Lancer Lines<br>Beside Srikara Hospitals<br>Secunderabad<br>500025
+                    </td>
+                    <td>+91 99499 26526</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td style="font-weight:bold;">Medi Care Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">15<br>10<br>14<br>20<br>05<br>09<br>10<br>06</td>
+                    <td>9-1-21<br>Gandhi Bhavan<br>Patel Nagar<br>Nampally<br>Hyderabad<br>500001</td>
+                    <td>040 3041 7445</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td style="font-weight:bold;">Suraksha Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">06<br>08<br>03<br>06<br>05<br>-<br>08<br>06</td>
+                    <td>3-6-147/2<br>Road No 17<br>Himayat Nagar<br>opposite Hdfc Bank<br>Hyderabad<br>500029</td>
+                    <td>040 2322 3168</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td style="font-weight:bold;">Prime Hospital Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">09<br>05<br>12<br>07<br>04<br>03<br>07<br>14</td>
+                    <td>Plot Street Number 4<br>Sanjeeva Reddy Nagar<br>Ameerpet<br>Hyderabad<br>500038</td>
+                    <td>040 4456 9973</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td style="font-weight:bold;">Star Hospitals Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">15<br>10<br>14<br>20<br>05<br>09<br>10<br>06</td>
+                    <td>8-2-596<br>Banjara Hills Rd Number 10<br>Gaffar Khan Colony<br>Banjara
+                        Hills<br>Hyderabad<br>500034</td>
+                    <td>040 4477 7777</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td style="font-weight:bold;">Aware Global Hospital Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">06<br>08<br>03<br>06<br>05<br>-<br>08<br>06</td>
+                    <td>2-81<br>Laxmi Enclave<br>Bhagya Nagar<br>Hyderabad<br>500035</td>
+                    <td>040 2411 1111</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td style="font-weight:bold;">Janani Voluntary Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">09<br>05<br>12<br>07<br>04<br>03<br>07<br>14</td>
+                    <td>7-11-21<br>Regimental Bazaar<br>Shivaji Nagar<br>Secunderabad<br>500003</td>
+                    <td>040 6560 3222</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td style="font-weight:bold;">SLMS Hospital Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">15<br>10<br>14<br>20<br>05<br>09<br>10<br>06</td>
+                    <td>Plot No 21<br>Nagole Cross Road<br>New Nagole Colony<br>Sowbhagya
+                        Nagar<br>Kothapet<br>Hyderabad<br>500102</td>
+                    <td>077023 00816</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td style="font-weight:bold;">Deshmukh Hospital Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">06<br>08<br>03<br>06<br>05<br>-<br>08<br>06</td>
+                    <td>4-51<br>Osmania University Rd<br>Vidya Nagar<br>Ram Nagar
+                        Gundu<br>Adikmet<br>Hyderabad<br>500044</td>
+                    <td>040 2765 6969</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td style="font-weight:bold;">Life Voluntary Blood Bank</td>
+                    <td style="text-align: center;color: red">AB+<br>A+<br>B+<br>O+<br>AB-<br>A-<br>B-<br>O-</td>
+                    <td style="color: green">09<br>05<br>12<br>07<br>04<br>03<br>07<br>14</td>
+                    <td>5-40<br>Road Number 1<br>Kukatpally Housing Board Colony<br>Kukatpally<br>Hyderabad<br>500072
+                    </td>
+                    <td>040 2305 9222</td>
+                </tr>
+        </table>
+    </div>
+
+
+    <footer class="panel-footer">
+        <div class="container" id="footer">
+
+            <section id="pages" class="col-sm-4">
+                <div>
+                    <a href="../../blood_bank/blood_bank">Blood Bank</a>
+                </div>
+                <div>
+                    <a href="../../Camps/Camps">Camps</a>
+                </div>
+                <div>
+                    <a href="../../Authentication/login">Login</a>
+                </div>
+                <div>
+                    <a href="about.html">About Us</a>
+                </div>
+            </section>
+
+            <hr class="visible-xs">
+
+            <section id="contact-us" class="col-sm-4">
+                <p>Conatct Us:</p>
+                <a href="mailto:ebloodbank@gmail.com">
+                    <p>Send a email</p>
+                </a>
+
+            </section>
+
+            <hr class="visible-xs">
+
+
+            <section class="col-sm-4">
+
+                <ul class="social-icons">
+					<li><a href="https://www.facebook.com"><img src="{% static 'images\Facebook.png' %}" /></a></li>
+					<li><a href="https://www.twitter.com"><img src="{% static 'images\Twitter.png' %}" /></a></li>
+					<li><a href="https://www.youtube.com"><img src="{% static 'images\Youtube.png' %}" /></a></li>
+				</ul>
+
+            </section>
+
+        </div>
+    </footer>
+    <script src="{% static 'js/1jquery-2.1.4.min.js' %}"></script>
+	<script src="{% static 'js/1bootstrap.min.js' %}"></script>
+</body>
+
+</html>

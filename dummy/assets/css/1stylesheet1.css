@@ -1,0 +1,908 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+#Home_Black_background_List{
+  background-color:#191919 ;
+}
+
+#header-nav {
+
+  background-color:#191919; 
+
+  border-radius: 0;
+  border: 0;
+  background-color:#191919;
+  height: auto; 
+
+}
+
+#logo{
+  width: 100px;
+  height: 100px;
+  margin: 10px 15px 10px 0;
+  border-radius: 50px;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  line-height: .75;
+}
+
+.body{
+  width:100%;
+}
+
+.navbar-brand h1:hover{
+  color:red;
+  text-decoration: none;
+}
+
+.navbar-brand p { 
+  color: red;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#nav-list a{
+
+	font-size: 1.4em;
+	color:white;
+	text-align:center;
+	padding-top: 5px;
+	margin-top: 27px;
+	text-decoration:white;
+}
+
+#nav-list a:hover {
+  color:red;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius:50px;
+  /*padding-right:25px;
+  padding-left: 25px;*/
+  background-color: white;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                 inset -5px -5px 10px rgba(255,255,255,0.05),
+                 inset 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+#navbarToggle{
+  color: red;
+  background-color: white;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -15px;
+}
+
+
+#content{
+	padding-bottom: 100px;
+}
+
+.image-contain {
+  position:relative;
+  margin: 10px;
+  padding: 15px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.slider{
+  width: 90%;
+  height: auto;   
+  border-radius: 30px;
+  margin:auto;
+  overflow: hidden;
+}
+
+.slides{
+  width:500%;
+  height: 500px;
+  display: flex;
+}
+   
+.slides input{
+  display:none;
+} 
+.slide{
+  width: 20%;
+  transition: 1.5s;
+}
+.slide img{
+  width:100%;
+  height: 100%;
+}
+
+.navigation-btn-manual{
+  position: absolute;
+  display: flex;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  justify-content: center;
+  left:40%;
+
+}
+
+.manual-btn{
+  border:2px solid #4d4d4d;
+  padding:5px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background-color: grey;
+}
+
+#r1:checked ~ .first{
+  margin-left: 0;
+}
+#r2:checked ~ .first{
+  margin-left: -20%;
+}
+#r3:checked ~ .first{
+  margin-left: -40%;
+}
+#r4:checked ~ .first{
+  margin-left: -60%;
+}
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  margin-top: 530px;
+  padding-bottom: 20px;
+  justify-content: center;
+  left:40%;
+}
+.navigation-auto div{
+  border:2px solid #4d4d4d;
+  padding:5px;
+  border-radius: 15px;
+  transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+.division-name{
+  color:white;
+  text-shadow: 2px 2px 5px black;
+  border-radius: 15px 50px;
+  background-color: red;
+  padding: 5px 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#compatible_blood{
+  padding-top: 35px;
+}
+
+#compatible_blood img{
+  float: left;
+  width: 100%;
+  height: 88%;
+  padding:0px 20px 20px 20px;
+}
+
+#compatible_blood table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border:3px solid black;
+}
+#compatible_blood th{
+  color:white;
+  background-color: #FE2E2E;
+  font-size: 1.8em;
+  text-align: center;
+  padding: 8px;
+  border: 3px solid black;
+}
+#compatible_blood td{
+  text-align: left;
+  font-size: 1.5em;
+  padding: 8px;
+  vertical-align: top;
+  color:black;
+  border: 3px solid black;
+  font-weight: bold;
+  text-align: center;
+}
+#compatible_blood tr:hover{
+  background-color:#e6e6e6;
+}
+#pages{
+  text-align: center;
+}
+#pages a{
+  color: white;
+  font-size: 1.3em;
+}
+
+#pages a:hover{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+}
+#contact-us{
+  margin-top: 10px;
+  text-align: center;
+  color: red;
+  font-size: 1.3em;
+}
+#contact-us a{
+  color: white;
+}
+
+#contact-us a:hover{
+  text-decoration:none;
+  color: red;
+}
+.social-icons {
+  text-align: center;
+}  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+}
+
+.social-icons li img {
+  width:70px;
+  height:70px;
+  margin-right: 20px;
+  border-radius: 50px;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+.social-icons li:nth-child(3):hover img{
+ 
+box-shadow:  2px 4px 6px red;
+}
+.social-icons li:nth-child(2):hover img{
+ 
+box-shadow:  2px 4px 6px #1DA1F2;
+}
+.social-icons li:nth-child(1):hover img{
+ 
+box-shadow:  2px 4px 6px #426782;
+}
+.panel-footer{
+  background-color:#191919;
+
+  padding-bottom: 30px;
+}
+.panel-footer .container{
+  margin-left: 20px;
+}
+
+
+
+#login{
+  margin:0;
+  padding: 0;
+  /*background-color: #37a37f*//*#CEF6F5; ;*/
+  /*background-image: url('../images/login_background.jpg');*/
+  /*background-repeat: no-repeat; */
+  background-color: #191919;
+  font-family: sans-serif;
+}
+#login-box{
+  background-image: url('../images/login-blood.png') ;
+  background-repeat:no-repeat;
+  background-position: right;
+  background-size:30% 80%;
+  width :500px;
+  position: absolute;
+  padding: 30px;
+  left: 50%;
+  top: 50%;
+  border-radius: 30px;
+  background-color: #191919;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  box-shadow:  -7px -7px 14px rgba(255,255,255,0.15),
+                 7px 7px 14px rgba(0,0,0,0.5),
+                 inset -7px -7px 14px rgba(255,255,255,0.05),
+                 inset 7px 7px 14px rgba(0,0,0,0.5);
+  background-image: url('../images/login-blood.png')
+}
+
+#login-box img{
+  width:50px;
+  height:50px;
+  float:left;
+  border-radius: 50px;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+#login-box h1{
+  color:#f53636;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  font-family: serif;
+
+}
+
+#login-box input[type="text"],#login-box input[type="password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #0040FF;
+  padding: 14px;
+  width: 300px;
+  outline: none;
+  color: white;
+  border-radius: 27px;
+  transition: 0.25s;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+
+}
+
+#login-box input[type="text"]:hover,#login-box input[type="password"]:hover{
+  border-color: #FE2E2E;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                 inset -5px -5px 10px rgba(255,255,255,0.05),
+                 inset 5px 5px 10px rgba(0,0,0,0.5);
+  background-color: #595959;
+  
+}
+
+#login-box input[type="text"]:focus,#login-box input[type="password"]:focus{
+  width:400px;
+  border-color: #01DF01;
+}
+
+#login-box label,#login-box span{
+  color: red;
+}
+
+#login-box input[type="submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #01DF01;
+  padding: 14px 40px;
+  width: 150px;
+  outline: none;
+  color: white;
+  border-radius: 27px;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+#login-box input[type="submit"]:hover{
+  background-color:#01DF01;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                 inset -5px -5px 10px rgba(255,255,255,0.05),
+                 inset 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+#login-box p{
+  color:white;
+}
+
+#login-box .btn{
+  background-color: #191919;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  float :right;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+
+#login-box .btn:hover {
+  background-color: #191919;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                 inset -5px -5px 10px rgba(255,255,255,0.05),
+                 inset 5px 5px 10px rgba(0,0,0,0.5);
+}
+#login-box .signup {
+  color:#a19c9c;
+}
+#login-box .signup a{
+  color: #3498db;
+  text-decoration: none;
+}
+#login-box .signup a:hover{
+  text-decoration:underline;
+}
+
+
+#signup{
+  margin:0;
+  padding: 0;
+  background-color: #191919;
+  font-family: sans-serif;
+}
+
+#signup-box{
+  background-image: url('../images/login-blood.png') ;
+  background-repeat:no-repeat;
+  background-position: right;
+  background-size:30% 70%;
+  width :500px;
+  position: absolute;
+  padding: 30px;
+  left: 50%;
+  top: 50%;
+  border-radius: 20px;
+  background-color: #191919;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  box-shadow:  -7px -7px 14px rgba(255,255,255,0.15),
+                 7px 7px 14px rgba(0,0,0,0.5),
+                 inset -7px -7px 14px rgba(255,255,255,0.05),
+                 inset 7px 7px 14px rgba(0,0,0,0.5);
+}
+#signup-box img{
+  width:50px;
+  height:50px;
+  float:left;
+  border-radius: 50px;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+
+}
+
+
+ #signup-box .btn{
+  background-color: #191919;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  float :right;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+
+ #signup-box .btn{
+  background-color: #191919;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  float :right;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+
+
+#signup-box .btn:hover {
+  background-color: #191919;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                 inset -5px -5px 10px rgba(255,255,255,0.05),
+                 inset 5px 5px 10px rgba(0,0,0,0.5);
+}
+#signup-box h1{
+  color:red;
+  font-weight: 500;
+}
+
+
+
+#signup-box input[type="text"],#signup-box input[type="password"],#signup-box input[type="email"],input[type="tel"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #0040FF;
+  padding: 14px;
+  width: 300px;
+  outline: none;
+  color: white;
+  border-radius: 27px;
+  transition: 0.25s;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+#signup-box input[type="text"]:hover,#signup-box input[type="password"]:hover,#signup-box input[type="email"]:hover,#signup-box input[type="tel"]:hover{
+  border-color: #FE2E2E;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                 inset -5px -5px 10px rgba(255,255,255,0.05),
+                 inset 5px 5px 10px rgba(0,0,0,0.5);
+background-color: #b3adad;
+}
+
+#signup-box input[type="text"]:focus,#signup-box input[type="password"]:focus,#signup-box input[type="email"]:focus,#signup-box input[type="tel"]:focus{
+  width:400px;
+  border-color: #01DF01;
+}
+
+#signup-box label{
+  color:red;
+  margin-right: 10px;
+}
+
+#signup-box input[type="submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #01DF01;
+  padding: 14px 40px;
+  width: 150px;
+  outline: none;
+  color: white;
+  border-radius: 27px;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+#signup-box input[type="submit"]:hover{
+  background-color:#01DF01;
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                 inset -5px -5px 10px rgba(255,255,255,0.05),
+                 inset 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+#signup-box p{
+  color:white;
+}
+#signup-box a{
+  color: #3498db;
+  text-decoration: none;
+}
+
+#signup-box a:hover{
+  color: #01DF01;
+  text-decoration: underline;;
+}
+
+
+#blood_bank_content{
+  padding-bottom: 100px;
+  
+}
+#blood_bank_content h1{
+  color:white;
+  text-shadow: 2px 2px 5px black;
+  border-radius: 15px 50px;
+  background: red;
+  padding: 15px 50px; 
+}
+#blood_bank_content hr{
+  height:3px;
+  background-color:black;
+}
+#blood_bank_content table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border:3px solid black;
+}
+#blood_bank_content th{
+  color:white;
+  background-color: #FE2E2E;
+  font-size: 1.4em;
+  text-align: center;
+  padding: 8px;
+  border: 3px solid black;
+  position: sticky;
+  top: 0px;
+
+} 
+
+#blood_bank_content td{
+  text-align: left;
+  font-size: 1.2em;
+  padding: 8px;
+  vertical-align: top;
+  color:black;
+  border: 3px solid black;
+}
+#blood_bank_content tr:hover {
+  background-color:#e6e6e6;
+}
+#blood_bank_search{
+  padding: auto;
+  padding-bottom: 15px;
+  align-self: right;
+}
+#blood_bank_search input[type=search] {
+  width: 20%;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 25px;
+  font-size: 16px;
+  background-image: url('../images/searchicon.png');
+  background-position: 11px 13px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  outline: none;
+  transition: width 0.4s ease-in-out;
+  box-shadow: 2px 2px 4px 4px #a6a6a6;
+}
+
+#blood_bank_search input[type=search]:focus {
+  border: 3px solid black;
+  border-radius:25px; 
+  width: 35%;
+}
+#blood_bank_search #blood_bank_blood_group_selection {
+  width: 12%;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 12px 15px 12px 40px;
+  outline: none;
+  transition: width 0.4s ease-in-out;
+  box-shadow: 2px 2px 4px 4px #a6a6a6;
+  background-image: url('../images/Blood_drop.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#Blood_Camps .Camps input[type="text"],#Blood_Camps .Camps input[type="date"]{
+border-radius: 50px;
+box-sizing: border-box;
+padding:12px 20px 12px 30px;
+border-width: 3px;
+transition: 0.25s;
+outline: none;
+box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                 inset -5px -5px 10px rgba(255,255,255,0.05),
+                 inset 5px 5px 10px rgba(0,0,0,0.5);
+ }
+ #Blood_Camps .Camps input[type="text"]:focus,#Blood_Camps .Camps input[type="date"]:focus{
+border: 2px #595959;
+width: 20%;
+border-radius:50px;
+ }
+#blood_bank_search input[type=search] {
+  width: 20%;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 25px;
+  font-size: 16px;
+  background-image: url('../images/searchicon.png');
+  background-position: 11px 13px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  outline: none;
+  transition: width 0.4s ease-in-out;
+  box-shadow: 2px 2px 4px 4px #a6a6a6;
+}
+
+#blood_bank_search input[type=search]:focus {
+  border: 3px solid black;
+  border-radius:25px; 
+  width: 35%;
+}
+#blood_bank_search #blood_bank_blood_group_selection {
+  width: 12%;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 12px 15px 12px 40px;
+  outline: none;
+  transition: width 0.4s ease-in-out;
+  box-shadow: 2px 2px 4px 4px #a6a6a6;
+  background-image: url('../images/Blood_drop.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#Blood_Camps .Camps input[type="text"],#Blood_Camps .Camps input[type="date"]{
+border-radius: 50px;
+padding:5px 10px 5px 10px;
+border-width: 3px;
+transition: 0.25s;
+box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                 inset -5px -5px 10px rgba(255,255,255,0.05),
+                 inset 5px 5px 10px rgba(0,0,0,0.5);
+
+}
+#Blood_Camps .Camps input[type="text"]:hover,#Blood_Camps .Camps input[type="date"]:hover{
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+
+
+#Blood_Camps{
+  padding :20px 40px 20px 40px;
+}
+#Blood_Camps .Camps input[type="text"]:hover,#Blood_Camps .Camps input[type="date"]:hover{
+  box-shadow:  -5px -5px 10px rgba(255,255,255,0.05),
+                 5px 5px 10px rgba(0,0,0,0.5),
+                  -5px -5px 10px rgba(255,255,255,0.05),
+                  5px 5px 10px rgba(0,0,0,0.5);
+}
+
+#Blood_Camps .table{
+  border-collapse: initial;
+  width: 100%;
+  border-radius: 5px;
+  }
+#Blood_Camps .Camps-table{
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-size: 40px 80%, 40px 80%, 14px 80%, 14px 80%;
+  background-position: 0 0, 120%, 0 0, 120%;
+  background-attachment: local, local, scroll, scroll;
+  padding:20px 40px 20px 40px;
+}
+#Blood_Camps .table th{
+ background-color: #f78181;
+border:1.5px solid #222;
+text-align:middle;
+padding:8px;
+font-weight:bold;
+vertical-align: middle;
+white-space: nowrap;
+}
+#Blood_Camps h1{
+  font-weight: bold;
+  padding-left: 50px;
+  color:white;
+  text-shadow: 2px 2px 5px black;
+  border-radius: 15px 50px;
+  background: red;
+  padding: 15px 50px; 
+}
+
+#Blood_Camps .table td{
+  border: 1px solid black;
+  text-align: left;
+  padding :8px;
+  vertical-align:middle;
+  white-space: nowrap;
+}
+#Blood_Camps .table tr:hover{
+  background-color:#f9f3f3;
+}
+
+#Blood_Camps .Camps{
+padding: 0px 40px 10px 40px;
+} 
+
+#Blood_Camps .table.sticky th{
+  position:sticky;
+  top:0;
+  color:white;
+
+  padding-bottom: 20px;
+  padding-right:10px;
+  align-self:left;
+} 
+
+#Blood_Camps .table.sticky th{
+  position:sticky;
+  top:0;
+  color:white;
+}
+
+#about-us .container-fluid{
+  padding: 30px;
+}
+
+.hospital{
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 60px;
+  border: 3px solid black;
+}
+
+.container-fluid div{
+  height: 600px;
+}
+
+#hospital-name{
+  font-size: 2em;
+  padding: 5px;
+  margin: 7px;
+  font-weight: bold;
+  color: red;
+}
+
+
+.hospital-images{
+  width: 75%;
+  height: 350px;
+  text-align: center;
+  margin: 0;
+}
+
+#call-btn {
+    font-size: 1.5em;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: black;
+    color: red;
+}
+
+#adress{
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+}
