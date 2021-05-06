@@ -25,4 +25,3 @@ urlpatterns = [
     path('Authentication/',include('Authentication.urls')),
     path('admin/', admin.site.urls),
 ]
-
