@@ -22,11 +22,11 @@
 					</a>
 					<div class="navbar-brand">
 
-							<a href="{% url 'index' %}">
+						<a href="{% url 'index' %}">
 
-								<h1>e-Blood Bank</h1>
-							</a>
-							<p>Bring a Life Back to Power!!</p>
+							<h1>e-Blood Bank</h1>
+						</a>
+						<p>Bring a Life Back to Power!!</p>
 					</div>
 					<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
 						data-target="#collapsable-nav" aria-expanded="false">
@@ -90,9 +90,9 @@
 					</tr>
 				</thead>
 				<tbody>
-				{% for data in campsdata %}
+					{% for data in campsdata %}
 					<tr>
-						<td>{{data.id}}</td>
+						<td>{{forloop.counter}}</td>
 						<td>{{data.date}}</td>
 						<td>{{data.time}}</td>
 						<td>{{data.campname}}</td>
@@ -160,9 +160,9 @@
 			</div>
 		</footer>
 
-	<script src="{% static 'js/1jquery-2.1.4.min.js' %}"></script>
-	<script src="{% static 'js/1bootstrap.min.js' %}"></script>
-	<script type="text/javascript" src="{% static 'js/1script1.js' %}"></script>
+		<script src="{% static 'js/1jquery-2.1.4.min.js' %}"></script>
+		<script src="{% static 'js/1bootstrap.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/1script1.js' %}"></script>
 
 </body>
 
