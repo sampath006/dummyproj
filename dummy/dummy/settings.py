@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    
+    'blood_bank.apps.BloodBankConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
