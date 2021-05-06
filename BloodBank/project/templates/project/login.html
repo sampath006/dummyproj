@@ -1,0 +1,36 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="icon" href="images/img.jfif" type="image/x-icon">
+	<link rel="stylesheet" href="{% static '/css/stylesheet.css'%}">
+</head>
+<body id="login">
+
+
+	<form id = "login-box" action="..\index.html" method="post" >
+
+
+		<a href="index.html">
+			<img src="{% static 'images\wrong.png' %}" id = "wrong-image">
+		</a>
+		<h1>Login</h1>
+
+		<span>Type of Login : </span>
+
+		<input type="radio" class="radio" name="type" value="user"/ required>
+       	<label for="male">User</label>
+       	<input type="radio" class="radio" name="type" value="hospital"/>
+       	<label for="z">Hospital</label>
+
+
+		<input type="text" name="username" placeholder="Enter User Name"/ required>
+		<input type="password" name="password" placeholder="Enter Password"/ required>
+		<input type="submit" name="" value = "Login">
+		<div class="signup">
+		*Don't have an account <a href="signup.html">Sign Up</a></div>
+	</form>
+
+</body>
+</html>

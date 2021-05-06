@@ -1,0 +1,280 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>e-Blood Bank</title>
+	<link rel="icon" href="../images/img.jfif" type="image/x-icon">
+	<link rel="stylesheet" href="{% static '/css/bootstrap.css'%}">
+	<link rel="stylesheet" href="{% static '/css/stylesheet.css'%}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="../index.html" class="pull-left visible-md visible-lg">
+						<img id="logo" src="{% static 'images\img.jfif' %}" alt="Logo">
+					</a>
+					<div class="navbar-brand">
+
+						<a href="index.html">
+
+							<a href="index.html">
+
+								<h1>e-Blood Bank</h1>
+							</a>
+							<p>Bring a Life Back to Power!!</p>
+					</div>
+					<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li id="navHomeButton" class="visible-xs active">
+							<a href="index.html" style="background-color: black;">Home</a>
+						</li>
+						<li id="navMenuButton">
+							<a href="login.html">
+								<br class="hidden-xs"> DashBoard</a>
+						</li>
+						<li>
+							<a href="blood_bank.html">
+								<br class="hidden-xs"> Blood Bank</a>
+						</li>
+						<li>
+							<a href="Camps.html">
+								<br class="hidden-xs"> Camps</a>
+						</li>
+						<li>
+							<a href="login.html">
+								<br class="hidden-xs"> Login</a>
+						</li>
+						<li>
+							<a href="about.html">
+								<br class="hidden-xs"> About Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="Blood_Camps">
+		<h1>Blood Camps</h1>
+		<div class="Camps">
+			<span></span><input type="text" name="location" placeholder="City Name">
+			<span></span><input type="date" name="date" placeholder="Enter date">
+		</div>
+		<div class="Camps-table">
+			<table class="table sticky">
+				<thead>
+					<tr>
+						<th>S.NO</th>
+						<th>Date</th>
+						<th>Time</th>
+						<th>Camps Name</th>
+						<th>Address</th>
+						<th>State</th>
+						<th>District</th>
+						<th>Contact</th>
+						<th>Organised by</th>
+						<th>Register</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>15-3-2021</td>
+						<td>9:00-16:00</td>
+						<td>Star Blood Camp</td>
+						<td>Near ICICI Bank,A-Colony</td>
+						<td>Andhra pradesh</td>
+						<td>Krishna</td>
+						<td>6875854689</td>
+						<td>Apollo Hospitals</td>
+
+						<td><a href="../html/login.html">Registered as Voluntary Donar</a></td>
+
+
+
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>4-4-2021</td>
+						<td>9:00-18:00</td>
+						<td>Aaroghya Blood Camp</td>
+						<td>Near NTR grounds,Besent Road</td>
+						<td>Andhra pradesh</td>
+						<td>Krishna</td>
+						<td>9547566245</td>
+						<td>Rainbow Hospitals</td>
+						<td><a href="../html/login.html">Registered as Voluntary Donar</a></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>14-5-2021</td>
+						<td>9:00-15:00</td>
+						<td>Niveda Blood Donation</td>
+						<td>Beside XYZ-Hospital,Rajahmundry</td>
+						<td>Andhra pradesh</td>
+						<td>East Godavari</td>
+						<td>9547681945</td>
+						<td>XYZ-Hospitals</td>
+						<td><a href="../html/login.html">Registered as Voluntary Donar</a></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>3-4-2021</td>
+						<td>10:00-18:00</td>
+						<td>Rakth Blood Camp</td>
+						<td>Three lantern road,Vizianagaram</td>
+						<td>Andhra pradesh</td>
+						<td>Vizianagaram</td>
+						<td>9592602345</td>
+						<td>Rainbow Hospitals</td>
+						<td><a href="../html/login.html">Registered as Voluntary Donar</a></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>17-5-2021</td>
+						<td>10:00-17:00</td>
+						<td>Blood Cross Society</td>
+						<td>Pragathi Nagar,Kukatpally</td>
+						<td>Telangana</td>
+						<td>Medchal</td>
+						<td>9546594651</td>
+						<td>Apollo Hospitals</td>
+						<td><a href="../html/login.html">Registered as Voluntary Donar</a></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>14-4-2021</td>
+						<td>9:00-18:00</td>
+						<td>No More Thalassemia</td>
+						<td>Sanjeev Reddy Nagar</td>
+						<td>Telangana</td>
+						<td>Hyderabad</td>
+						<td>9546846545</td>
+						<td>-</td>
+						<td><a href="../html/login.html">Registered as Voluntary Donar</a></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>14-4-2021</td>
+						<td>9:00-18:00</td>
+						<td>aaroghya Blood Camp</td>
+						<td>PN Colony,Srikakulam</td>
+						<td>Andhra pradesh</td>
+						<td>Srikakulam</td>
+						<td>9547566245</td>
+						<td>Seven Hills Hospitals</td>
+						<td><a href="html/login.html">Registered as Voluntary Donar</a></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>4-4-2021</td>
+						<td>9:00-18:00</td>
+						<td>Mother Teresa Blood Bank</td>
+						<td>Near RK-beach,beach Road</td>
+						<td>Andhra pradesh</td>
+						<td>Vishakapatnam</td>
+						<td>9547876985</td>
+						<td>OmniRK Hospitals</td>
+						<td><a href="html/login.html">Registered as Voluntary Donar</a></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>16-4-2021</td>
+						<td>9:00-18:00</td>
+						<td>aaroghya Blood Camp</td>
+						<td>Near NTR grounds,Besent Road</td>
+						<td>Andhra pradesh</td>
+						<td>Krishna</td>
+						<td>9547566245</td>
+						<td>-</td>
+						<td><a href="html/login.html">Registered as Voluntary Donar</a></td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>21-5-2021</td>
+						<td>8:00-16:00</td>
+						<td>Rotary Blood Bank</td>
+						<td>Nehru Chowk,Gudivada</td>
+						<td>Andhra pradesh</td>
+						<td>Krishna</td>
+						<td>6356468545</td>
+						<td>kamineni Hospitals</td>
+						<td><a href="html/login.html">Registered as Voluntary Donar</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+
+		<footer class="panel-footer">
+
+
+			<div class="container" id="footer">
+
+				<section id="pages" class="col-sm-4">
+					<div>
+						<a href="blood_bank.html">Blood Bank</a>
+					</div>
+					<div>
+						<a href="Camps.html">Camps</a>
+					</div>
+					<div>
+						<a href="login.html">Login</a>
+					</div>
+					<div>
+						<a href="about.html">About Us</a>
+					</div>
+				</section>
+
+				<hr class="visible-xs">
+
+				<section id="contact-us" class="col-sm-4">
+					<p>Conatct Us:</p>
+					<a href="mailto:ebloodbank@gmail.com">
+						<p>Send a email</p>
+					</a>
+
+				</section>
+
+				<hr class="visible-xs">
+
+
+				<section class="col-sm-4">
+
+					<ul class="social-icons">
+						<li><a href="https://www.facebook.com"><img src="{% static 'images/facebook.png' %}" /></a></li>
+						<li><a href="https://www.twitter.com"><img src="{% static 'images/twitter.png' %}" /></a></li>
+						<li><a href="https://www.youtube.com"><img src="{% static 'images/youtube.png' %}" /></a></li>
+					</ul>
+
+				</section>
+
+
+			</div>
+		</footer>
+
+
+
+
+	<script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
