@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    
+    'blood_bank.apps.BloodBankConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'camps',
         'USER':'postgres',
-        'PASSWORD':'saisai35',
+        'PASSWORD':'Raveen@2705',
         'HOST':'localhost',
     }
 }
