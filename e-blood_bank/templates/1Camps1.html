@@ -21,9 +21,7 @@
 						<img id="logo" src="{% static 'images\img.jfif' %}" alt="Logo">
 					</a>
 					<div class="navbar-brand">
-
 						<a href="{% url 'index' %}">
-
 							<h1>e-Blood Bank</h1>
 						</a>
 						<p>Bring a Life Back to Power!!</p>
@@ -39,12 +37,19 @@
 				<div id="collapsable-nav" class="collapse navbar-collapse">
 					<ul id="nav-list" class="nav navbar-nav navbar-right">
 						<li id="navHomeButton" class="visible-xs active">
-							<a href="{% url 'index' %}" style="background-color: black;">Home</a>
+							<a href="{% url 'index' %}" id="Home_Black_background_List">Home</a>
 						</li>
+						{% if user.is_authenticated %}
 						<li id="navMenuButton">
-							<a href="{% url 'login' %}">
-								<br class="hidden-xs"> DashBoard</a>
+							<a href="{% url 'dashboard'%}">
+								<br class="hidden-xs">DashBoard</a>
 						</li>
+						{%else%}
+						<li id="navMenuButton">
+							<a href="{%url 'login'%}">
+								<br class="hidden-xs">DashBoard</a>
+						</li>
+						{%endif%}
 						<li>
 							<a href="{% url 'blood_bank' %}">
 								<br class="hidden-xs"> Blood Bank</a>
@@ -53,20 +58,26 @@
 							<a href="{% url 'camps' %}">
 								<br class="hidden-xs"> Camps</a>
 						</li>
+						{% if user.is_authenticated %}
+						<li>
+							<a href="{% url 'logout'%}">
+								<br class="hidden-xs"> Logout</a>
+						</li>
+						{%else%}
 						<li>
 							<a href="{% url 'login' %}">
 								<br class="hidden-xs"> Login</a>
 						</li>
+						{%endif%}
 						<li>
 							<a href="{% url 'about' %}">
-								<br class="hidden-xs"> Network</a>
+								<br class="hidden-xs">Network</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
-
 	<div id="Blood_Camps">
 		<h1>Blood Camps</h1>
 		<div class="Camps">
